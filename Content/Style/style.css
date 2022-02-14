@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Festive&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap');
-
+body{
+  background-color: black;
+}
 
 /*Header Styling */
 .navHeader{
@@ -10,12 +12,16 @@
   align-items: center;
   position: fixed;
   border: 1px solid seashell;
+  z-index: 6;
+  left: 0px;
+  top: 0px;
+  right: 0px;
 }
 .navHeader h1{
   color: seashell;
   font-family: 'Festive';
   font-size: 50px;
-  padding: 0px 15px;
+  padding: 0px 0px;
   opacity: 0.7;
 }
 .navHeader .firstLink{
@@ -32,12 +38,14 @@
 
 /*Mission Style*/
 #mission{
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
   height: 700px;
-  width: 100%;
-  margin: 10px;
-  border: 1px solid seashell;
+  position: relative;
+  top: 70px;
   z-index: 1;
-
+  
 }
 .titleBox{
   display: flex;
@@ -48,22 +56,23 @@
   top: -350px;
   width: 110%;
   text-align: center;
-  margin-left: 10px;
+
 }
-.titleBox h2, h4{
+h2, h4{
     color: seashell;
     font-family: Helvetica, Arial, sans-serif;
     opacity: 0.7;
+    text-align:center;
 }
 
 /*Tea of the Month */
 #teaOMonth{
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto;
   background-color: black;
   width: 1000px;
+  height: auto;
 }
-.berry, .rum, .donuts, .myrtle, .bedford{
-  width: 300px;
-  height: 200px;
-  
-}
+
