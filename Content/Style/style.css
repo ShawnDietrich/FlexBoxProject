@@ -4,59 +4,60 @@ body{
 }
 
 /*Header Styling */
-.navHeader{
+.navBlock{
   background-color: black;
   width: 100%;
   height: 69px;
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   position: fixed;
-  border: 1px solid seashell;
   z-index: 6;
   left: 0px;
   top: 0px;
   right: 0px;
+  border-bottom: 1px solid seashell;
 }
-.navHeader h1{
+
+.navTitle h1{
   color: seashell;
   font-family: 'Festive';
   font-size: 50px;
-  padding: 0px 0px;
   opacity: 0.7;
 }
-.navHeader .firstLink{
+.links{
   margin-left: auto;
 }
-.navHeader .lastLink{
-  margin-right: 20px;
-}
-.navHeader a{
-  margin-left: 5px;
+.links a{
   color: seashell;
-  opacity: 0.5;
+  margin-right: 15px;
+  opacity: 0.9;
 }
 
 /*Mission Style*/
 #mission{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  margin: 0px auto;
-  height: 700px;
+  align-items: center;
   position: relative;
-  top: 70px;
+  width: 100%;
+  margin: 63px auto 0px auto;  
+}
+.imgBox{
   z-index: 1;
-  
+  height: 700px;
+}
+.imgBox img{
+  width: 1200px;
+  height: 700px;
 }
 .titleBox{
-  display: flex;
+  z-index: 3;
   background-color: black;
-  z-index: 2;
-  flex-direction: column;
-  position: relative;
-  top: -350px;
-  width: 110%;
+  color: seashell;
+  width: 1200px;
+  position: absolute;
   text-align: center;
-
 }
 h2, h4{
     color: seashell;
@@ -69,10 +70,79 @@ h2, h4{
 #teaOMonth{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin: 0px auto;
   background-color: black;
   width: 1000px;
-  height: auto;
+  margin: 0px auto;
+}
+.teaBlock{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.teaBlock figure{
+  margin: 0px 10px;
+}
+.teaBlock figure h4{
+  margin: 10px 0px;
 }
 
+/*Locations Block */
+#locations{
+  background-color: black;
+  background-image: url("../img-locations-background.webp");
+  background-repeat: no-repeat;
+  background-size: 1200px 500px;
+  height: 500px;
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.locTitleBlock{
+  margin-bottom: 15px;
+}
+
+.locationBlocks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.location{
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  margin: 0px 40px;
+}
+
+/*Footer Block*/
+footer{
+  text-align: center;
+  background-color: black;
+  color: seashell;
+  width: 200px;
+  margin: 0px auto;
+}
+footer h2{
+  margin-top: 5px;
+}
+.copyright{
+  margin-left: 20px;
+  color: seashell;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
